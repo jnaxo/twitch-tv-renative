@@ -1,0 +1,49 @@
+{
+    "id": "blank",
+    "common": {
+        "id": "comm.zeek.twitch",
+        "title": "Twitch",
+        "description": "Cross-platform application project based on ReNative",
+        "license": "MIT",
+        "includedPlugins": [
+            "*"
+        ],
+        "includedFonts": [
+            "*"
+        ],
+        "includedPermissions": [
+            "INTERNET"
+        ],
+        "backgroundColor": "#FFFFFF"
+    },
+    "platforms": {
+        "androidtv": {
+            "entryFile": "index.androidtv",
+            "reactNativeEngine": "hermes",
+            "permissions": [
+                "*"
+            ],
+            "buildSchemes": {
+                "debug": {
+                    "signingConfig": "Debug",
+                    "bundleAssets": false
+                },
+                "release": {
+                    "signingConfig": "Release",
+                    "bundleAssets": true,
+                    "bundleIsDev": false
+                }
+            }
+        },
+        "tizen": {
+            "appName": "ReNativeTV",
+            "package": "NkVRhWHJST",
+            "id": "NkVRhWHJST.ReNativeTV",
+            "entryFile": "index.tizen",
+            "certificateProfile": "RNVanillaCert"
+        },
+        "webos": {
+            "entryFile": "index.webos"
+        }
+    }
+}
