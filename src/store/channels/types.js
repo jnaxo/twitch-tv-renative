@@ -1,0 +1,1 @@
+export const FETCH_CHANNELS_LIVE = 'channel/FETCH_CHANNELS_LIVE';

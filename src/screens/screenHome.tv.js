@@ -1,6 +1,7 @@
 import React from 'react';
 import { getScaledValue, StyleSheet } from 'renative';
 import { View, Text } from 'react-native';
+import { LiveChannels } from '../components';
 import { STYLES } from '../config';
 
 const styles = StyleSheet.create({
@@ -19,6 +20,7 @@ const ScreenHome = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{'Hello World!'}</Text>
+      <LiveChannels />
     </View>
   );
 };
