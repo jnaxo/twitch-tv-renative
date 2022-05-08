@@ -2,17 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet } from 'renative';
 import { View } from 'react-native';
 import { Provider } from 'react-redux';
-import { initNavigation } from '@noriginmedia/react-spatial-navigation';
+import { init } from '@noriginmedia/norigin-spatial-navigation';
 import { STYLES } from '../config';
 import Router from '../router';
 import { store } from '../store';
 import { Loading } from '../components';
 import { authHelpers } from '../utils/helpers';
 
-initNavigation({
-  debug: false,
-  visualDebug: false,
-  nativeMode: false
+init({
+  debug: true,
+  visualDebug: true
 });
 
 const styles = StyleSheet.create({

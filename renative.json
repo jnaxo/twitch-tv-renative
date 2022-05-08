@@ -27,7 +27,7 @@
         "@reach/router": "1.3.4",
         "@react-native-community/cli-platform-ios": "source:rnv",
         "@react-native-community/cli": "source:rnv",
-        "@noriginmedia/react-spatial-navigation": "source:rnv"
+        "@noriginmedia/norigin-spatial-navigation": "1.0.3"
     },
     "permissions": {
         "ios": {},

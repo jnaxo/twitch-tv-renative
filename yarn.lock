@@ -1251,6 +1251,13 @@
   resolved "https://registry.yarnpkg.com/@kwsites/promise-deferred/-/promise-deferred-1.1.1.tgz#8ace5259254426ccef57f3175bc64ed7095ed919"
   integrity sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==
 
+"@noriginmedia/norigin-spatial-navigation@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@noriginmedia/norigin-spatial-navigation/-/norigin-spatial-navigation-1.0.3.tgz#fb654cbdca813514732d55465ed6044d1c127fa4"
+  integrity sha512-8wQ/PTOkcqgWmJQKew/Mpvu45aHu0Uwep6m6TfBLrnQlb0PAnF4/aTtHAAMrzhXpHwK/McO/kPQtsdd1atzgUw==
+  dependencies:
+    lodash "^4.17.21"
+
 "@noriginmedia/react-spatial-navigation@2.12.1":
   version "2.12.1"
   resolved "https://registry.yarnpkg.com/@noriginmedia/react-spatial-navigation/-/react-spatial-navigation-2.12.1.tgz#1711abe005905df186dd51299413e7d91181e4d6"
