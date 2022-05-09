@@ -13,7 +13,7 @@ export const channelsSlice = createSlice({
   reducers: {
     setChannelsLive: (state, { payload }) => {
       state.live = payload.data;
-      pagination.cursor = payload.pagination.cursor;
+      state.pagination.cursor = payload.pagination?.cursor;
     }
   }
 });

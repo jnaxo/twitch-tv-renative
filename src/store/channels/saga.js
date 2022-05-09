@@ -7,8 +7,8 @@ function* fetchChannelsLive() {
   try {
     const response = yield call(channels.getChannelList);
     console.log('res', response);
-    payload = response.data;
-    yield put(setChannelsLive(payload.data));
+    payload = response.data
+    yield put(setChannelsLive(payload));
   } catch (e) {
     // TODO: catch errors
     console.log('saga fetchChannelsLive error', e);

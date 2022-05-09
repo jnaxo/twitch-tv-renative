@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { getScaledValue, StyleSheet } from 'renative';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import { useFocusable } from '@noriginmedia/norigin-spatial-navigation';
 import { LiveChannels } from '../components';
 import { STYLES } from '../config';
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
-    justifyContent: 'center',
     flex: 1
   },
   title: {
@@ -17,9 +16,14 @@ const styles = StyleSheet.create({
 });
 
 const ScreenHome = () => {
+  const { setFocus } = useFocusable();
+
+  useEffect(() => {
+  //  setFocus('liveChannels');
+  }, [])
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>{'Hello World!'}</Text>
+    <View style={styles.container} preferredChildFocusKey>
       <LiveChannels />
     </View>
   );
